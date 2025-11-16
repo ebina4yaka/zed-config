@@ -11,7 +11,7 @@
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-codex"
+      "model": "claude-haiku-4.5"
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
@@ -53,7 +53,8 @@
     "codebook": true,
     "make": true,
     "svelte": true,
-    "git-firefly": true
+    "git-firefly": true,
+    "docker-compose": true
   },
   "autosave": "on_focus_change",
   "ui_font_family": "Monaspace Krypton NF",
