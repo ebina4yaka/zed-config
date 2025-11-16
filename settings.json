@@ -7,22 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "agent_buffer_font_size": 18,
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-codex"
-    },
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-codex"
-    },
-    "commit_message_model": {
-      "provider": "copilot_chat",
-      "model": "claude-haiku-4.5"
-    },
-    "model_parameters": []
-  },
+  // General settings
   "inlay_hints": {
     "show_background": false
   },
@@ -57,9 +42,33 @@
     "docker-compose": true
   },
   "autosave": "on_focus_change",
+  "vim_mode": true,
+  "base_keymap": "JetBrains",
+
+  // UI settings (fonts, theme)
+  "agent_buffer_font_size": 18,
   "ui_font_family": "Monaspace Krypton NF",
-  "buffer_line_height": "comfortable",
+  "ui_font_size": 17.0,
+  "theme": "Everforest Dark Hard",
+  "icon_theme": "Material Icon Theme",
+  "buffer_font_family": "Monaspace Krypton NF",
+  "buffer_font_size": 16.5,
   "buffer_font_weight": 600.0,
+  "buffer_line_height": "comfortable",
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true
+  },
   "terminal": {
     "font_size": 18.0,
     "font_family": "Monaspace Krypton NF",
@@ -78,27 +87,6 @@
       "ss10": true
     }
   },
-  "buffer_font_family": "Monaspace Krypton NF",
-  "buffer_font_features": {
-    "calt": true,
-    "liga": true,
-    "ss01": true,
-    "ss02": true,
-    "ss03": true,
-    "ss04": true,
-    "ss05": true,
-    "ss06": true,
-    "ss07": true,
-    "ss08": true,
-    "ss09": true,
-    "ss10": true
-  },
-  "vim_mode": true,
-  "icon_theme": "Material Icon Theme",
-  "base_keymap": "JetBrains",
-  "ui_font_size": 17.0,
-  "buffer_font_size": 16.5,
-  "theme": "Everforest Dark Hard",
   "experimental.theme_overrides": {
     "background.appearance": "transparent",
     "background": "#000000AC",
@@ -119,5 +107,22 @@
     "scrollbar.thumb.background": "#00000000",
     "scrollbar.thumb.border": "#FFFFFF90",
     "editor.active_line.background": "#00000010"
+  },
+
+  // AI settings
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.1-codex"
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5.1-codex"
+    },
+    "commit_message_model": {
+      "provider": "copilot_chat",
+      "model": "claude-haiku-4.5"
+    },
+    "model_parameters": []
   }
 }
