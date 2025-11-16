@@ -39,7 +39,11 @@
     "make": true,
     "svelte": true,
     "git-firefly": true,
-    "docker-compose": true
+    "docker-compose": true,
+    "scss": true,
+    "sql": true,
+    "graphql": true,
+    "jq": true
   },
   "autosave": "on_focus_change",
   "vim_mode": true,
