@@ -43,11 +43,20 @@
     "scss": true,
     "sql": true,
     "graphql": true,
-    "jq": true
+    "jq": true,
+    "tsgo": true
   },
   "autosave": "on_focus_change",
   "vim_mode": true,
   "base_keymap": "JetBrains",
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["tsgo"]
+    },
+    "TSX": {
+      "language_servers": ["tsgo"]
+    }
+  },
 
   // UI settings (fonts, theme)
   "agent_buffer_font_size": 18,
